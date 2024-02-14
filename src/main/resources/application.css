@@ -1,0 +1,63 @@
+.root{
+    -fx-background-image: url('bg.png');
+    -fx-background-size: cover;
+;
+}
+.vbox{
+    -fx-background-color: rgb(229, 228, 226);
+}
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.google.button{
+    -fx-background-color: rgb(229, 228, 226);
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+;
+}
+.google.button:hover{
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
+    -fx-text-fill: #feb900;
+}
+.welcome{
+    -fx-font-size: 36px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px;
+    -fx-border-width: 5px;
+    -fx-border-color: #1781EB;
+    -fx-border-radius: 5px;
+}
+.image_button {
+    -fx-background-color: #feb900;
+    -fx-text-fill: black;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 5px;
+    -fx-border-radius: 2px;
+    -fx-border-color: #feb900;
+}
+.crud_button{
+    -fx-background-color: #1781EB;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #1781EB;
+}
+.pane {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+}
+
+
+

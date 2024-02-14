@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx.BackOfficeProduitController">
+   <children>
+      <VBox layoutX="-9.0" prefHeight="720.0" prefWidth="228.0" styleClass="vbox" stylesheets="@../../../application.css">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../LOGO.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="CircleProfile" fill="DODGERBLUE" radius="45.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circular-image" translateY="-21.0">
+               <VBox.margin>
+                  <Insets left="60.0" top="14.0" />
+               </VBox.margin>
+            </Circle>
+            <Label fx:id="welcome_label" prefHeight="23.0" prefWidth="195.0" text="Mohamed Aziz Theiri">
+               <VBox.margin>
+                  <Insets left="40.0" right="5.0" top="-12.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="SignInButton" layoutX="362.0" layoutY="494.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="156.0" styleClass="google" stylesheets="@../../../application.css" text="Matériels">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../crayon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="37.0" top="25.0" />
+               </VBox.margin></Button>
+            <Button fx:id="SignInButton1" mnemonicParsing="false" onAction="#testAction" prefHeight="86.0" prefWidth="182.0" styleClass="google" stylesheets="@../../../application.css" text="Produits finis">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icone_pf.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="48.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="SignInButton11" mnemonicParsing="false" prefHeight="84.0" prefWidth="122.0" styleClass="google" stylesheets="@../../../application.css" text="Cours">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icone_cours.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="42.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="SignInButton12" mnemonicParsing="false" prefHeight="86.0" prefWidth="169.0" styleClass="google" stylesheets="@../../../application.css" text="Evènements">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icone_event.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="50.0" right="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="SignInButton13" mnemonicParsing="false" prefHeight="86.0" prefWidth="139.0" styleClass="google" stylesheets="@../../../application.css" text="Boutique">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icone_boutique.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="43.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="298.0" layoutY="88.0" prefHeight="86.0" prefWidth="569.0" styleClass="welcome" stylesheets="@../../../application.css" text="     Gestion des Produits finis" textAlignment="CENTER" textFill="#140000" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <Pane layoutX="234.0" layoutY="233.0" prefHeight="281.0" prefWidth="426.0" styleClass="pane" stylesheets="@../../../application.css">
+         <children>
+            <Label layoutX="33.0" layoutY="30.0" stylesheets="@../../../application.css" text="Libelle" />
+            <Label layoutX="33.0" layoutY="79.0" stylesheets="@../../../application.css" text="Description" />
+            <TextArea layoutX="33.0" layoutY="105.0" prefHeight="106.0" prefWidth="234.0" />
+            <TextField layoutX="118.0" layoutY="26.0" />
+            <Button fx:id="btnfile" layoutX="36.0" layoutY="224.0" mnemonicParsing="false" onAction="#fileButtonAction" styleClass="image_button" stylesheets="@../../../application.css" text="Ajouter Image" />
+            <ImageView fx:id="imgView" fitHeight="130.0" fitWidth="149.0" layoutX="273.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <TableView layoutX="668.0" layoutY="231.0" prefHeight="281.0" prefWidth="321.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="idProduit" />
+          <TableColumn prefWidth="75.0" text="libProduit" />
+            <TableColumn prefWidth="75.0" text="description" />
+            <TableColumn prefWidth="95.0" text="totalRate" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnfile1" layoutX="275.0" layoutY="598.0" mnemonicParsing="false" styleClass="crud_button" stylesheets="@../../../application.css" text="Ajouter Produit" />
+      <Button fx:id="btnfile2" layoutX="531.0" layoutY="598.0" mnemonicParsing="false" styleClass="crud_button" stylesheets="@../../../application.css" text="Modifier Produit" />
+      <Button fx:id="btnfile3" layoutX="775.0" layoutY="598.0" mnemonicParsing="false" styleClass="crud_button" stylesheets="@../../../application.css" text="Supprimer Produit" />
+   </children>
+    <stylesheets>
+        <String fx:value="/application.css" />
+    </stylesheets>
+</AnchorPane>
